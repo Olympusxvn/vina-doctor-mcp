@@ -1,0 +1,6 @@
+EXPECTED OUTPUT
+We will use your software (simply provide us with a link) to upload an input and retreat the output. 
+Let's clarify the format of the input and output for each challenge.
+1. The Medical Scribe 
+1.1. Input: an audio consultation (5 to 20 minutes, .wav or .mp3 file) 
+1.2. Output: a) transcript, b) structured clinical information (symptoms, findings, diagnosis, treatment), c) structured clinical report for doctors

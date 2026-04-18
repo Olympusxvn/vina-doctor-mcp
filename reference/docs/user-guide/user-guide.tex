@@ -1,0 +1,606 @@
+% Vina Doctor AI Scribe — User Guide
+% ===================================
+% A comprehensive guide for doctors using Vina Doctor AI Scribe
+% to transcribe and structure medical consultation audio into SOAP reports.
+
+\documentclass[12pt,a4paper]{article}
+
+% --- Packages ---------------------------------------------------------------
+\usepackage{iftex}
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{metalogo}
+
+% --- Colors -----------------------------------------------------------------
+\usepackage{xcolor}
+\definecolor{primary}{HTML}{00595c}
+\definecolor{primary-container}{HTML}{0d7377}
+\definecolor{secondary}{HTML}{515f74}
+\definecolor{tertiary}{HTML}{714600}
+\definecolor{error}{HTML}{ba1a1a}
+\definecolor{surface}{HTML}{f5fafb}
+\definecolor{ondark}{HTML}{ffffff}
+
+% --- Geometry ----------------------------------------------------------------
+\geometry{margin=2.5cm}
+
+% --- Fonts -------------------------------------------------------------------
+\usepackage{fontspec}
+\setmainfont{Roboto}
+\setsansfont{Roboto}
+
+% --- Headers / Footers ------------------------------------------------------
+\pagestyle{fancy}
+\fancyhead[L]{\color{primary}\textbf{Vina Doctor AI Scribe}}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+\fancyfoot[R]{\color{secondary}\small User Guide — v1.0}
+\pagestyle{fancy}
+
+% --- Title formatting -------------------------------------------------------
+% Preserve the section number and add a small separation so the
+% automatically generated number does not run into the title text.
+% The third argument sets the label (\thesection, \thesubsection, ...)
+% and the fourth argument is the horizontal separation between label and title.
+\titleformat{\section}{\color{primary}\Large\bfseries}{\thesection}{0.75em}{#1}
+\titleformat{\subsection}{\color{primary}\large\bfseries}{\thesubsection}{0.5em}{#1}
+\titleformat{\subsubsection}{\color{primary}\normalsize\bfseries}{\thesubsubsection}{0.5em}{#1}
+
+% --- Custom commands ---------------------------------------------------------
+\newcommand{\cmd}[1]{\texttt{#1}}
+\newcommand{\img}[3]{\textit{#3}\includegraphics[width=#1]{#2}}
+
+% --- Hyperref -----------------------------------------------------------
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=primary-container,
+  pdftitle={Vina Doctor AI Scribe — User Guide},
+  pdfauthor={Vina Doctor Team},
+}
+
+% --- Document ------------------------------------------------------------
+\begin{document}
+
+% --- Cover ----------------------------------------------------------------
+\begin{titlepage}
+	\centering
+	\vspace*{2cm}
+
+	% Logo / brand
+	\color{primary}\LARGE\bfseries Vina Doctor \\[0.3em]
+	\color{primary-container}\large AI Scribe
+
+	\vspace{1.5cm}
+
+	{\color{primary}\Huge\bfseries User Guide}
+
+	\vspace{1cm}
+	{\color{secondary}\Large Transforming Consultations into Structured Clinical Notes}
+
+	\vspace{3cm}
+
+	\begin{tabular}{m{2.5cm}m{10cm}}
+		\textbf{Version} & 1.0                   \\
+		\textbf{Date}    & April 2026            \\
+		\textbf{Product} & Vina Doctor AI Scribe \\
+	\end{tabular}
+
+	\vspace{2cm}
+	\color{secondary}\small This document is confidential and intended for licensed medical professionals.
+\end{titlepage}
+
+% --- Table of Contents ------------------------------------------------------
+\newpage
+\tableofcontents
+\newpage
+
+% --- Section 1: Getting Started ---------------------------------------------
+\section{Getting Started}
+
+\subsection{What is Vina Doctor AI Scribe?}
+Vina Doctor AI Scribe is a web-based portal that uses artificial intelligence to
+transform audio recordings of patient consultations into structured clinical notes
+using the SOAP format (Subjective, Objective, Assessment, Plan).
+
+\subsection{System Requirements}
+\begin{itemize}
+	\item A modern web browser: Google Chrome, Mozilla Firefox, Apple Safari, or Microsoft Edge
+	\item A stable internet connection
+	\item An audio file in one of the following formats: \textbf{MP3, WAV, M4A, OGG, WebM,} or \textbf{FLAC}
+	\item A valid account provided by your administrator
+\end{itemize}
+
+\subsection{Accessing the Application}
+Navigate to your organization's Vina Doctor URL in your browser. You will be
+redirected to the login page if you are not already authenticated.
+
+\subsection{Logging In}
+\begin{enumerate}
+	\item Enter your registered email address in the \textbf{Email} field.
+	\item Enter your password in the \textbf{Password} field.
+	\item Click \textbf{Sign In}.
+	\item On success, you will be taken to the Dashboard.
+\end{enumerate}
+
+\subsection{Creating an Account}
+If you do not have an account yet:
+\begin{enumerate}
+	\item Click the \textbf{Register} link below the Sign In button.
+	\item Fill in your \textbf{Full Name}, \textbf{Email}, and \textbf{Password} (minimum 8 characters).
+	\item Click \textbf{Create Account}.
+	\item You will see a success notification and be logged in automatically.
+\end{enumerate}
+
+% --- Section 2: Dashboard ----------------------------------------------------
+\section{The Dashboard}
+
+After logging in, you land on the \textbf{Dashboard}. This is your home screen.
+
+\subsection{Dashboard Layout}
+The Dashboard is divided into three areas:
+\begin{itemize}
+	\item \textbf{Left sidebar} — navigation menu (hidden on mobile, shown on tablet/desktop).
+	\item \textbf{Header row} — a greeting and the \textbf{New Consultation} quick-action button.
+	\item \textbf{Main content area} — statistics cards and a list of recent consultations.
+\end{itemize}
+
+\subsection{Statistics Cards}
+The three cards at the top give you a quick overview:
+\begin{tabular}{m{3cm}m{9cm}}
+	\textbf{Today's Consultations} & Total number of consultations created today.      \\
+	\textbf{Pending Review}        & Consultations still being processed by the AI.    \\
+	\textbf{Completed}             & Consultations for which the SOAP report is ready. \\
+\end{tabular}
+
+\subsection{Recent Consultations}
+Below the statistics, the five most recent consultations are listed as clickable cards.
+Click any card to open its detail page. Use the \textbf{View All} link to see the full history.
+
+% --- Section 3: Navigation ----------------------------------------------------
+\section{Navigation}
+
+The sidebar provides access to all main sections:
+
+\subsection{Desktop / Tablet}
+The sidebar is permanently visible on the left. It contains:
+\begin{itemize}
+	\item \textbf{Dashboard} — home screen
+	\item \textbf{New Consultation} — upload audio and start processing
+	\item \textbf{History} — paginated list of all past consultations
+	\item \textbf{Settings} — profile, language, and AI model preferences
+	\item \textbf{Start Recording} (call-to-action button) — shortcut to New Consultation
+	\item \textbf{Log Out} — sign out of your account
+\end{itemize}
+
+\subsection{Mobile}
+On smaller screens, the sidebar collapses into a hamburger menu
+tapped from the top bar. Tapping the hamburger reveals the same navigation links.
+
+% --- Section 4: New Consultation ---------------------------------------------
+\section{Creating a New Consultation}
+
+\subsection{Upload Flow}
+\begin{enumerate}
+	\item Click \textbf{New Consultation} in the sidebar or the \textbf{+} button on the Dashboard.
+	\item On the New Consultation page, you will see a drop zone.
+	\item \textbf{Drag and drop} your audio file onto the zone, or click \textbf{browse} to select a file from your device.
+	\item Once a file is selected, it is displayed as a card showing the filename and size. You can remove it by clicking the $\times$ button and selecting a different file.
+	\item Choose an AI model:
+	      \begin{itemize}
+		      \item \textbf{Optimized Speed} — fast, real-time transcription; suitable for routine visits.
+		      \item \textbf{Maximum Accuracy} — deeper clinical analysis; recommended for complex cases.
+	      \end{itemize}
+	\item Click \textbf{Upload \& Generate Notes}.
+	\item The page will redirect to the consultation detail page where you can track progress.
+\end{enumerate}
+
+\subsection{Accepted File Formats}
+% Use a compact two-column description list to avoid the section number
+% colliding with the heading when the PDF renderer compresses spacing.
+\begin{tabular}{@{}p{2.2cm}@{}p{11cm}@{}}
+	\texttt{.mp3}  & MPEG Audio Layer III       \\
+	\texttt{.wav}  & Waveform Audio File Format \\
+	\texttt{.m4a}  & MPEG-4 Audio               \\
+	\texttt{.ogg}  & Ogg Vorbis                 \\
+	\texttt{.webm} & WebM Audio                 \\
+	\texttt{.flac} & Free Lossless Audio Codec  \\
+\end{tabular}
+
+\subsection{AI Model Choices}
+\begin{tabular}{m{4cm}m{8cm}}
+	\textbf{Optimized Speed}  & Uses the Qwen ASR Flash model. Low latency, real-time-style transcription. Good for follow-up visits and routine checkups.            \\[0.5em]
+	\textbf{Maximum Accuracy} & Uses the Qwen3.5-Omni-Flash model. Deep clinical reasoning; best for new patients, complex diagnoses, or multi-symptom presentations. \\
+\end{tabular}
+
+\subsection{What Happens After Upload?}
+Once you click \textbf{Upload \& Generate Notes}:
+\begin{enumerate}
+	\item The audio file is saved to the server and a consultation record is created with status \textbf{Pending}.
+	\item You are redirected to the consultation detail page.
+	\item The AI begins processing the audio in the background.
+	\item The detail page automatically refreshes every 3 seconds to show the latest status.
+\end{enumerate}
+
+% --- Section 5: Consultation History -----------------------------------------
+\section{Consultation History}
+
+\subsection{Viewing Past Consultations}
+Click \textbf{History} in the sidebar to see a paginated list of all your consultations.
+
+\subsection{Pagination}
+\begin{itemize}
+	\item Each page shows up to 20 consultations.
+	\item Use \textbf{Previous} and \textbf{Next} buttons to navigate pages.
+	\item The page indicator shows the current range, e.g. \textit{Showing 1 to 20 of 156}.
+\end{itemize}
+
+\subsection{Table Columns}
+\begin{tabular}{m{3cm}m{9cm}}
+	\textbf{Date}         & The date and time the consultation was created.                                         \\
+	\textbf{Consultation} & A shortened ID (the first 8 characters of the UUID).                                    \\
+	\textbf{Status}       & A coloured pill: Pending (blue-grey), Processing (amber), Done (teal), or Failed (red). \\
+	\textbf{View}         & A link to open the consultation detail page.                                            \\
+\end{tabular}
+
+% --- Section 6: Consultation Detail Page --------------------------------------
+\section{Consultation Detail Page}
+
+Click any consultation card (from the Dashboard or History) to open its detail page.
+
+\subsection{Page Layout}
+\begin{itemize}
+	\item \textbf{Header} — consultation ID and creation date/time.
+	\item \textbf{Status badge} — coloured pill reflecting the current state.
+	\item \textbf{Progress card} — shown while the AI is working (Pending / Processing).
+	\item \textbf{SOAP Report} — shown once processing is complete.
+\end{itemize}
+
+\subsection{Status States}
+
+\subsubsection{Pending}
+The audio has been received and is waiting in the processing queue.
+A spinner card shows: \textit{"AI is queued your recording…"}.
+
+\subsubsection{Processing}
+The AI engine is actively transcribing and analysing the audio.
+A spinner card shows: \textit{"AI is processing your recording…"}.
+This page updates automatically every 3 seconds.
+
+\subsubsection{Done}
+The SOAP report is ready and displayed below the header.
+
+\subsubsection{Failed}
+Processing could not be completed (for example, due to an API error).
+A red error card is shown with a \textbf{Retry} button.
+Clicking \textbf{Retry} re-runs the existing audio through the AI — no need to re-upload the file.
+The page then returns to the Processing state and polls until complete.
+
+% --- Section 7: SOAP Report -------------------------------------------------
+\section{The SOAP Report}
+
+When a consultation reaches the \textbf{Done} status, the SOAP report is displayed on the detail page.
+
+\subsection{Report Structure}
+The SOAP report is divided into four sections:
+
+\begin{tabular}{m{3cm}m{9cm}}
+	\textbf{Subjective} & What the patient reported — symptoms, duration, medical history, and chief complaint.        \\
+	\textbf{Objective}  & Measurable findings — vital signs, physical examination results, and test values.            \\
+	\textbf{Assessment} & The clinician's diagnosis or clinical impression, including possible differential diagnoses. \\
+	\textbf{Plan}       & Recommended next steps — prescriptions, referrals, follow-up schedule, and lifestyle advice. \\
+\end{tabular}
+
+Each section is collapsible. Click the section header to expand or collapse it.
+
+\subsection{Viewing in Your Language}
+Above the SOAP sections, three language tabs allow you to switch the report language:
+\begin{itemize}
+	\item \textbf{Tiếng Việt} — Vietnamese
+	\item \textbf{English} — English
+	\item \textbf{Français} — French
+\end{itemize}
+All four SOAP sections and the free-text fields update immediately when you switch tabs.
+
+\subsection{ICD-10 Codes}
+If the AI identified diagnostic codes, they appear as teal pills above the SOAP sections,
+e.g. \texttt{[A00.1]} \texttt{[B20.5]}. These are clickable (where supported by your
+external reference tool).
+
+\subsection{Severity Indicator}
+A severity badge appears below the ICD-10 codes. Possible values:
+\begin{itemize}
+	\item \textbf{Critical} — red badge
+	\item \textbf{High} — orange badge
+	\item \textbf{Medium} — amber badge
+	\item \textbf{Low} — grey badge
+\end{itemize}
+
+\subsection{Medications Table}
+If the AI generated a prescription, a medications table appears at the bottom of the report:
+
+\begin{tabular}{m{3cm}m{3cm}m{3cm}m{3cm}}
+	\textbf{Name} & \textbf{Dosage} & \textbf{Frequency} & \textbf{Duration} \\
+	Amoxicillin   & 500 mg          & Three times daily  & 7 days            \\
+	Ibuprofen     & 400 mg          & As needed          & 5 days            \\
+\end{tabular}
+
+% --- Section 8: Settings ----------------------------------------------------
+\section{Settings}
+
+Click \textbf{Settings} in the sidebar to manage your preferences.
+
+\subsection{Doctor Profile}
+Display-only fields showing your registered name, specialty, and licence number.
+These are set by your administrator.
+
+\subsection{Language Defaults}
+Set your preferred languages for dictation input and report output.
+Options: Vietnamese, English, French.
+
+\subsection{AI Model Preference}
+Choose your default AI model for all new consultations:
+\begin{itemize}
+	\item \textbf{Optimized Speed} (default)
+	\item \textbf{Maximum Accuracy}
+\end{itemize}
+This preference is saved per-browser using local storage.
+
+\subsection{Updating the DashScope API Key}
+If your organisation uses a custom DashScope API key:
+\begin{enumerate}
+	\item Scroll to the \textbf{AI Engine API Key} section.
+	\item Enter your API key in the password field.
+	\item Click \textbf{Save API Key}.
+	\item A success notification confirms the update.
+\end{enumerate}
+
+% --- Section 9: Status Reference ---------------------------------------------
+\section{Status Reference}
+
+The consultation status is shown as a coloured pill on the History page and the Detail page.
+
+\begin{tabular}{m{3cm}m{3cm}m{6cm}}
+	\textbf{Status} & \textbf{Colour} & \textbf{Meaning}                                                    \\
+	\toprule
+	Pending         & Blue-grey       & Audio received; waiting for AI to start.                            \\
+	Processing      & Amber           & AI is actively transcribing and analysing.                          \\
+	Done            & Teal            & SOAP report is ready.                                               \\
+	Failed          & Red             & Processing failed (API error or invalid audio). Retry is available. \\
+\end{tabular}
+
+% --- Section 10: Troubleshooting -------------------------------------------
+\section{Troubleshooting}
+
+\subsection{I cannot log in}
+\begin{itemize}
+	\item Verify your email address is typed correctly.
+	\item Check that Caps Lock is not enabled.
+	\item Contact your administrator to reset your password.
+\end{itemize}
+
+\subsection{My audio file fails to upload}
+\begin{itemize}
+	\item Confirm your file is one of the supported formats: MP3, WAV, M4A, OGG, WebM, FLAC.
+	\item Ensure the file is not larger than your organisation's size limit (typically 500 MB).
+	\item Try a different browser if the upload consistently fails.
+\end{itemize}
+
+\subsection{Processing is stuck on "Pending"}
+\begin{itemize}
+	\item Wait up to one minute — processing may be queued behind other requests.
+	\item If the status remains Pending for more than 5 minutes, refresh the page.
+	\item If the problem persists, check with your system administrator.
+\end{itemize}
+
+\subsection{Processing failed}
+\begin{itemize}
+	\item A red \textbf{Failed} card appears on the detail page.
+	\item Click \textbf{Retry} to re-process the same audio file — no re-upload needed.
+	\item If the retry also fails, note the error message and contact support.
+\end{itemize}
+
+\subsection{The SOAP report is in the wrong language}
+Use the language tabs (\textbf{Tiếng Việt}, \textbf{English}, \textbf{Français}) above the SOAP sections
+to switch the display language. The underlying data is stored in all three languages simultaneously.
+
+% --- Section 11: Aliyun Cloud Deployment -------------------------------
+\section{Aliyun Cloud Deployment}
+
+This section describes how to provision an Alibaba Cloud ECS instance and deploy
+the Vina Doctor system onto it.
+
+\subsection{Aliyun Cloud Overview}
+
+Aliyun (Alibaba Cloud) is the cloud infrastructure platform used to host the
+Vina Doctor application. The system runs on a single \textbf{Elastic Compute Service}
+(ECS) instance — a virtual server in the cloud — with the following topology:
+
+\begin{itemize}
+	\item \textbf{ECS Instance} — virtual server running Docker Compose
+	\item \textbf{nginx} — reverse proxy routing traffic on port 80 to the correct container
+	\item \textbf{frontend} — Next.js web application (internal port 3000)
+	\item \textbf{backend} — FastAPI REST API (internal port 8001)
+	\item \textbf{ai\_engine} — FastAPI audio processing service (internal port 8000)
+	\item \textbf{postgres} — PostgreSQL database (internal port 5432)
+\end{itemize}
+
+Traffic from the internet reaches nginx on port 80 only. nginx forwards requests
+to the appropriate container based on the URL path.
+
+\subsection{Checking the ECS Instance}
+
+To inspect the running ECS instance:
+
+\begin{verbatim}
+ssh -i ~/.ssh/vina-doctor-key.pem root@47.238.224.19
+\end{verbatim}
+
+Once connected, the following commands are useful:
+
+\begin{verbatim}
+# List running containers
+docker compose -f /opt/vina-doctor/docker-compose.yml ps
+
+# View logs for a specific service
+docker compose -f /opt/vina-doctor/docker-compose.yml logs ai_engine
+docker compose -f /opt/vina-doctor/docker-compose.yml logs --tail=50 backend
+
+# Restart a specific service
+docker compose -f /opt/vina-doctor/docker-compose.yml restart ai_engine
+
+# View resource usage
+docker stats
+\end{verbatim}
+
+The application files are located at \texttt{/opt/vina-doctor/} on the instance.
+
+\subsection{Pulling and Deploying New Images}
+
+When a new version of the code is merged to \texttt{main}, the GitHub Actions
+CI pipeline automatically builds and pushes new Docker images to the registry,
+then SSHs into the ECS instance and runs:
+
+\begin{verbatim}
+docker compose -f /opt/vina-doctor/docker-compose.yml pull
+docker compose -f /opt/vina-doctor/docker-compose.yml up -d
+\end{verbatim}
+
+To manually trigger a redeploy on the ECS instance:
+
+\begin{verbatim}
+# Connect to the instance
+ssh -i ~/.ssh/vina-doctor-key.pem root@47.238.224.19
+
+# Navigate to the deploy directory
+cd /opt/vina-doctor
+
+# Pull the latest images from the registry
+docker compose pull
+
+# Restart all containers (pulled images are used automatically)
+docker compose up -d
+
+# Verify all containers are running
+docker compose ps
+\end{verbatim}
+
+\subsection{Updating Environment Variables on ECS}
+
+To update secrets such as the DashScope API key or database URL:
+
+\begin{verbatim}
+# Edit the environment file
+nano /opt/vina-doctor/.env
+
+# Or edit the docker-compose.env file if present
+nano /opt/vina-doctor/docker-compose.env
+
+# Restart the affected service
+docker compose -f /opt/vina-doctor/docker-compose.yml restart ai_engine
+\end{verbatim}
+
+After editing the \texttt{.env} file, it is safe to restart the service —
+Docker Compose reads the env file on every \texttt{up}.
+
+\subsection{Opening Ports on Aliyun Console}
+
+If a new port needs to be exposed (e.g., for debugging):
+
+\begin{enumerate}
+	\item Log into the \textbf{Alibaba Cloud Console} at \url{https://console.aliyun.com}
+	\item Navigate to \textbf{ECS} $\rightarrow$ \textbf{Instances}
+	\item Click on the ECS instance \texttt{ecs-vina-doctor}
+	\item Select the \textbf{Security Groups} tab
+	\item Click \textbf{Rule Management} $\rightarrow$ \textbf{Authorize}
+	\item Add a rule:
+	      \begin{tabular}{m{3cm}m{9cm}}
+		      \textbf{Protocol}   & \texttt{TCP}                    \\
+		      \textbf{Port Range} & e.g. \texttt{9000/9000}         \\
+		      \textbf{Source}     & \texttt{0.0.0.0/0} (or your IP) \\
+		      \textbf{Priority}   & \texttt{1} (highest)            \\
+	      \end{tabular}
+	\item Save the rule. The port will be reachable within a few minutes.
+\end{enumerate}
+
+The security group \texttt{sg-j6ce23ubouh3ef0479if} is currently assigned to
+the instance.
+
+\subsection{Checking the Aliyun CLI (\texttt{aliyun})}
+
+The \texttt{aliyun} CLI v3.3.4 is installed at
+\texttt{/home/linuxbrew/.linuxbrew/bin/aliyun}. It can be used to manage
+Aliyun resources directly from a terminal:
+
+\begin{verbatim}
+# Verify installation and version
+aliyun --version
+
+# List ECS instances
+aliyun ecs DescribeInstances --output json
+
+# Check a specific instance
+aliyun ecs DescribeInstanceAttribute --InstanceId <instance-id>
+\end{verbatim}
+
+Typical usage for Vina Doctor:
+
+\begin{verbatim}
+# List all running ECS instances
+aliyun ecs DescribeInstances --RegionId ap-southeast-1 \
+  --output json | jq '.Instances.Instance[] | {InstanceId, HostName, Status}'
+
+# Check instance public IP
+aliyun ecs DescribePublicIpAddresses --InstanceIds '["i-xxxxxxxxx"]' \
+  --output json
+\end{verbatim}
+
+\subsection{Certificate and Domain Setup (Serveo)}
+
+Vina Doctor uses \textbf{Serveo} to expose the local development machine to the
+internet via a subdomain. In production the domain
+\texttt{vina-doctor.serveousercontent.com} is managed through Serveo:
+
+\begin{verbatim}
+# Create an SSH tunnel to expose the service via Serveo
+ssh -o ServerAliveInterval=60 \
+  -R vina-doctor.serveousercontent.com:80:localhost:80 \
+  root@serveo.net
+\end{verbatim}
+
+This tunnels traffic from \texttt{vina-doctor.serveousercontent.com} on port 80
+to the local \texttt{localhost:80}. The Serveo URL is used as the
+\textbf{Callback URL} in authentication flows and as the public entry point
+for the frontend.
+
+In a production deployment on Aliyun, this step is not needed because the
+ECS instance has a public IP (\texttt{47.238.224.19}) and nginx handles
+routing directly.
+
+% --- Section 12: Glossary ----------------------------------------------------
+\section{Glossary}
+
+\begin{tabular}{m{4cm}m{8cm}}
+	\textbf{SOAP}            & Acronym for Subjective, Objective, Assessment, Plan — a standard format for clinical documentation. \\
+	\textbf{Vina Doctor}     & The web-based portal described in this guide.                                                       \\
+	\textbf{AI Scribe}       & The artificial intelligence component that transcribes audio and generates SOAP reports.            \\
+	\textbf{DashScope}       & The underlying AI service (Alibaba Cloud) that powers the transcription and analysis.               \\
+	\textbf{MP3 / WAV / M4A} & Common audio file format types supported by the upload tool.                                        \\
+	\textbf{Qwen}            & The family of large language models used by the AI engine.                                          \\
+	\textbf{ICD-10}          & International Classification of Diseases, 10th Revision — diagnostic codes used in the report.      \\
+	\textbf{Consultation}    & A single patient encounter, represented by one audio recording and one SOAP report.                 \\
+\end{tabular}
+
+\vfill
+\color{secondary}\small\raggedright
+Vina Doctor AI Scribe — User Guide v1.0 — April 2026 \\
+Copyright \textcopyright\ 2026 Vina Doctor. All rights reserved.
+\end{document}

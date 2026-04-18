@@ -1,0 +1,301 @@
+{
+  "description": "ICD-10-CM 2026 — Common Primary Care Diagnosis Codes",
+  "source": "https://www.icd10data.com/ICD10CM/Codes (2026)",
+  "version": "2026",
+  "note": "This is a curated subset of the most common primary care diagnosis codes. For a complete list, refer to the official WHO ICD-10 or CMS ICD-10-CM classification.",
+  "chapters": [
+    {
+      "code_range": "A00-B99",
+      "name": "Infectious & Parasitic Diseases",
+      "categories": [
+        {"code": "A09", "name": "Infectious gastroenteritis and colitis", "codes": [{"code": "A09", "name": "Infectious gastroenteritis and colitis, unspecified"}]},
+        {"code": "A37", "name": "Whooping cough", "codes": [{"code": "A37.9", "name": "Whooping cough, unspecified"}]},
+        {"code": "A41.9", "name": "Sepsis, unspecified", "codes": [{"code": "A41.9", "name": "Sepsis, unspecified organism"}]},
+        {"code": "B00.9", "name": "Herpesviral infection, unspecified", "codes": [{"code": "B00.9", "name": "Herpesviral infection, unspecified"}]},
+        {"code": "B01.9", "name": "Varicella without complication", "codes": [{"code": "B01.9", "name": "Varicella without complication"}]},
+        {"code": "B02.9", "name": "Zoster without complication", "codes": [{"code": "B02.9", "name": "Zoster without complication"}]},
+        {"code": "B05.9", "name": "Measles without complication", "codes": [{"code": "B05.9", "name": "Measles without complication"}]},
+        {"code": "B34.9", "name": "Viral infection, unspecified", "codes": [{"code": "B34.9", "name": "Viral infection, unspecified"}]},
+        {"code": "B35.9", "name": "Dermatophytosis, unspecified", "codes": [{"code": "B35.9", "name": "Dermatophytosis, unspecified"}]},
+        {"code": "B37.9", "name": "Candidiasis, unspecified", "codes": [{"code": "B37.9", "name": "Candidiasis, unspecified"}]},
+        {"code": "B86", "name": "Scabies", "codes": [{"code": "B86", "name": "Scabies"}]}
+      ]
+    },
+    {
+      "code_range": "C00-D49",
+      "name": "Neoplasms",
+      "categories": [
+        {"code": "C18.9", "name": "Malignant neoplasm of colon, unspecified", "codes": [{"code": "C18.9", "name": "Malignant neoplasm of colon, unspecified"}]},
+        {"code": "C34.90", "name": "Malignant neoplasm of unspecified part of bronchus or lung", "codes": [{"code": "C34.90", "name": "Malignant neoplasm of unspecified part of bronchus or lung, unspecified side"}]},
+        {"code": "C50.9", "name": "Malignant neoplasm of breast, unspecified", "codes": [{"code": "C50.9", "name": "Malignant neoplasm of breast, unspecified"}]},
+        {"code": "C61", "name": "Malignant neoplasm of prostate", "codes": [{"code": "C61", "name": "Malignant neoplasm of prostate"}]},
+        {"code": "C64.9", "name": "Malignant neoplasm of kidney, unspecified", "codes": [{"code": "C64.9", "name": "Malignant neoplasm of unspecified kidney, except renal pelvis"}]},
+        {"code": "C67.9", "name": "Malignant neoplasm of bladder, unspecified", "codes": [{"code": "C67.9", "name": "Malignant neoplasm of bladder, unspecified"}]},
+        {"code": "C73", "name": "Malignant neoplasm of thyroid gland", "codes": [{"code": "C73", "name": "Malignant neoplasm of thyroid gland"}]}
+      ]
+    },
+    {
+      "code_range": "D50-D89",
+      "name": "Blood & Immune Diseases",
+      "categories": [
+        {"code": "D50.9", "name": "Iron deficiency anemia, unspecified", "codes": [{"code": "D50.9", "name": "Iron deficiency anemia, unspecified"}]},
+        {"code": "D64.9", "name": "Anemia, unspecified", "codes": [{"code": "D64.9", "name": "Anemia, unspecified"}]},
+        {"code": "D69.6", "name": "Thrombocytopenia, unspecified", "codes": [{"code": "D69.6", "name": "Thrombocytopenia, unspecified"}]}
+      ]
+    },
+    {
+      "code_range": "E00-E89",
+      "name": "Endocrine, Nutritional & Metabolic",
+      "categories": [
+        {"code": "E03.9", "name": "Hypothyroidism, unspecified", "codes": [{"code": "E03.9", "name": "Hypothyroidism, unspecified"}]},
+        {"code": "E05.9", "name": "Thyrotoxicosis, unspecified", "codes": [{"code": "E05.9", "name": "Thyrotoxicosis, unspecified"}]},
+        {"code": "E10.9", "name": "Type 1 diabetes mellitus without complications", "codes": [{"code": "E10.9", "name": "Type 1 diabetes mellitus without complications"}]},
+        {"code": "E11.9", "name": "Type 2 diabetes mellitus without complications", "codes": [{"code": "E11.9", "name": "Type 2 diabetes mellitus without complications"}]},
+        {"code": "E11.65", "name": "Type 2 diabetes mellitus with hyperglycemia", "codes": [{"code": "E11.65", "name": "Type 2 diabetes mellitus with hyperglycemia"}]},
+        {"code": "E66.9", "name": "Obesity, unspecified", "codes": [{"code": "E66.9", "name": "Obesity, unspecified"}]},
+        {"code": "E78.5", "name": "Hyperlipidemia, unspecified", "codes": [{"code": "E78.5", "name": "Hyperlipidemia, unspecified"}]},
+        {"code": "E78.0", "name": "Pure hypercholesterolemia", "codes": [{"code": "E78.0", "name": "Pure hypercholesterolemia"}]},
+        {"code": "E87.6", "name": "Hypokalemia", "codes": [{"code": "E87.6", "name": "Hypokalemia"}]}
+      ]
+    },
+    {
+      "code_range": "F01-F99",
+      "name": "Mental & Behavioral Disorders",
+      "categories": [
+        {"code": "F10.10", "name": "Alcohol dependence, uncomplicated", "codes": [{"code": "F10.10", "name": "Alcohol dependence, uncomplicated"}]},
+        {"code": "F10.20", "name": "Alcohol dependence, in remission", "codes": [{"code": "F10.20", "name": "Alcohol dependence, in remission"}]},
+        {"code": "F17.210", "name": "Nicotine dependence, cigarettes, uncomplicated", "codes": [{"code": "F17.210", "name": "Nicotine dependence, cigarettes, uncomplicated"}]},
+        {"code": "F20.9", "name": "Schizophrenia, unspecified", "codes": [{"code": "F20.9", "name": "Schizophrenia, unspecified"}]},
+        {"code": "F31.9", "name": "Bipolar disorder, unspecified", "codes": [{"code": "F31.9", "name": "Bipolar disorder, unspecified"}]},
+        {"code": "F32.9", "name": "Major depressive disorder, single episode, unspecified", "codes": [{"code": "F32.9", "name": "Major depressive disorder, single episode, unspecified"}]},
+        {"code": "F33.0", "name": "Major depressive disorder, recurrent, mild", "codes": [{"code": "F33.0", "name": "Major depressive disorder, recurrent, mild"}]},
+        {"code": "F33.1", "name": "Major depressive disorder, recurrent, moderate", "codes": [{"code": "F33.1", "name": "Major depressive disorder, recurrent, moderate"}]},
+        {"code": "F33.9", "name": "Major depressive disorder, recurrent, unspecified", "codes": [{"code": "F33.9", "name": "Major depressive disorder, recurrent, unspecified"}]},
+        {"code": "F41.0", "name": "Panic disorder without agoraphobia", "codes": [{"code": "F41.0", "name": "Panic disorder without agoraphobia"}]},
+        {"code": "F41.1", "name": "Generalized anxiety disorder", "codes": [{"code": "F41.1", "name": "Generalized anxiety disorder"}]},
+        {"code": "F41.9", "name": "Anxiety disorder, unspecified", "codes": [{"code": "F41.9", "name": "Anxiety disorder, unspecified"}]},
+        {"code": "F43.10", "name": "Post-traumatic stress disorder, unspecified", "codes": [{"code": "F43.10", "name": "Post-traumatic stress disorder, unspecified"}]},
+        {"code": "F43.20", "name": "Adjustment disorder, unspecified", "codes": [{"code": "F43.20", "name": "Adjustment disorder, unspecified"}]},
+        {"code": "F43.21", "name": "Adjustment disorder with depressed mood", "codes": [{"code": "F43.21", "name": "Adjustment disorder with depressed mood"}]},
+        {"code": "F90.0", "name": "ADHD, predominantly inattentive type", "codes": [{"code": "F90.0", "name": "Attention-deficit hyperactivity disorder, predominantly inattentive type"}]},
+        {"code": "F90.1", "name": "ADHD, predominantly hyperactive type", "codes": [{"code": "F90.1", "name": "Attention-deficit hyperactivity disorder, predominantly hyperactive type"}]},
+        {"code": "F90.2", "name": "ADHD, combined type", "codes": [{"code": "F90.2", "name": "Attention-deficit hyperactivity disorder, combined type"}]}
+      ]
+    },
+    {
+      "code_range": "G00-G99",
+      "name": "Nervous System Diseases",
+      "categories": [
+        {"code": "G20", "name": "Parkinson's disease", "codes": [{"code": "G20", "name": "Parkinson's disease"}]},
+        {"code": "G30.9", "name": "Alzheimer's disease, unspecified", "codes": [{"code": "G30.9", "name": "Alzheimer's disease, unspecified"}]},
+        {"code": "G35", "name": "Multiple sclerosis", "codes": [{"code": "G35", "name": "Multiple sclerosis"}]},
+        {"code": "G40.9", "name": "Epilepsy, unspecified", "codes": [{"code": "G40.9", "name": "Epilepsy, unspecified"}]},
+        {"code": "G43.0", "name": "Migraine without aura", "codes": [{"code": "G43.0", "name": "Migraine without aura"}]},
+        {"code": "G43.9", "name": "Migraine, unspecified", "codes": [{"code": "G43.9", "name": "Migraine, unspecified"}]},
+        {"code": "G47.00", "name": "Insomnia, unspecified", "codes": [{"code": "G47.00", "name": "Insomnia, unspecified"}]},
+        {"code": "G47.30", "name": "Sleep apnea, unspecified", "codes": [{"code": "G47.30", "name": "Sleep apnea, unspecified"}]},
+        {"code": "G56.0", "name": "Carpal tunnel syndrome", "codes": [{"code": "G56.0", "name": "Carpal tunnel syndrome"}]},
+        {"code": "G62.9", "name": "Polyneuropathy, unspecified", "codes": [{"code": "G62.9", "name": "Polyneuropathy, unspecified"}]},
+        {"code": "G89.4", "name": "Chronic pain syndrome", "codes": [{"code": "G89.4", "name": "Chronic pain syndrome"}]}
+      ]
+    },
+    {
+      "code_range": "H00-H59",
+      "name": "Eye & Adnexa Diseases",
+      "categories": [
+        {"code": "H10.9", "name": "Conjunctivitis, unspecified", "codes": [{"code": "H10.9", "name": "Conjunctivitis, unspecified"}]},
+        {"code": "H25.9", "name": "Age-related cataract, unspecified", "codes": [{"code": "H25.9", "name": "Age-related cataract, unspecified"}]},
+        {"code": "H40.9", "name": "Unspecified glaucoma", "codes": [{"code": "H40.9", "name": "Unspecified glaucoma"}]}
+      ]
+    },
+    {
+      "code_range": "I00-I99",
+      "name": "Circulatory System Diseases",
+      "categories": [
+        {"code": "I10", "name": "Essential (primary) hypertension", "codes": [{"code": "I10", "name": "Essential (primary) hypertension"}]},
+        {"code": "I11.9", "name": "Hypertensive heart disease without heart failure", "codes": [{"code": "I11.9", "name": "Hypertensive heart disease without heart failure"}]},
+        {"code": "I20.9", "name": "Angina pectoris, unspecified", "codes": [{"code": "I20.9", "name": "Angina pectoris, unspecified"}]},
+        {"code": "I21.9", "name": "Acute myocardial infarction, unspecified", "codes": [{"code": "I21.9", "name": "Acute myocardial infarction, unspecified"}]},
+        {"code": "I25.9", "name": "Chronic ischemic heart disease, unspecified", "codes": [{"code": "I25.9", "name": "Chronic ischemic heart disease, unspecified"}]},
+        {"code": "I48.91", "name": "Unspecified atrial fibrillation", "codes": [{"code": "I48.91", "name": "Unspecified atrial fibrillation"}]},
+        {"code": "I50.9", "name": "Heart failure, unspecified", "codes": [{"code": "I50.9", "name": "Heart failure, unspecified"}]},
+        {"code": "I63.9", "name": "Cerebral infarction, unspecified", "codes": [{"code": "I63.9", "name": "Cerebral infarction, unspecified"}]},
+        {"code": "I64", "name": "Stroke, not specified as hemorrhage or infarction", "codes": [{"code": "I64", "name": "Stroke, not specified as hemorrhage or infarction"}]},
+        {"code": "I73.9", "name": "Peripheral vascular disease, unspecified", "codes": [{"code": "I73.9", "name": "Peripheral vascular disease, unspecified"}]},
+        {"code": "I80.10", "name": "Phlebitis and thrombophlebitis of unspecified femoral vein", "codes": [{"code": "I80.10", "name": "Phlebitis and thrombophlebitis of unspecified femoral vein"}]},
+        {"code": "I82.90", "name": "Acute embolism and thrombosis of unspecified vein", "codes": [{"code": "I82.90", "name": "Acute embolism and thrombosis of unspecified vein"}]},
+        {"code": "I83.90", "name": "Asymptomatic varicose veins of unspecified lower extremity", "codes": [{"code": "I83.90", "name": "Asymptomatic varicose veins of unspecified lower extremity"}]}
+      ]
+    },
+    {
+      "code_range": "J00-J99",
+      "name": "Respiratory System Diseases",
+      "categories": [
+        {"code": "J00", "name": "Acute nasopharyngitis (common cold)", "codes": [{"code": "J00", "name": "Acute nasopharyngitis (common cold)"}]},
+        {"code": "J02.9", "name": "Acute pharyngitis, unspecified", "codes": [{"code": "J02.9", "name": "Acute pharyngitis, unspecified"}]},
+        {"code": "J03.90", "name": "Acute tonsillitis, unspecified", "codes": [{"code": "J03.90", "name": "Acute tonsillitis, unspecified"}]},
+        {"code": "J06.9", "name": "Acute upper respiratory infection, unspecified", "codes": [{"code": "J06.9", "name": "Acute upper respiratory infection, unspecified"}]},
+        {"code": "J18.9", "name": "Pneumonia, unspecified organism", "codes": [{"code": "J18.9", "name": "Pneumonia, unspecified organism"}]},
+        {"code": "J20.9", "name": "Acute bronchitis, unspecified", "codes": [{"code": "J20.9", "name": "Acute bronchitis, unspecified"}]},
+        {"code": "J30.9", "name": "Allergic rhinitis, unspecified", "codes": [{"code": "J30.9", "name": "Allergic rhinitis, unspecified"}]},
+        {"code": "J32.9", "name": "Chronic sinusitis, unspecified", "codes": [{"code": "J32.9", "name": "Chronic sinusitis, unspecified"}]},
+        {"code": "J34.2", "name": "Deviated nasal septum", "codes": [{"code": "J34.2", "name": "Deviated nasal septum"}]},
+        {"code": "J40", "name": "Bronchitis, not specified as acute or chronic", "codes": [{"code": "J40", "name": "Bronchitis, not specified as acute or chronic"}]},
+        {"code": "J42", "name": "Unspecified chronic bronchitis", "codes": [{"code": "J42", "name": "Unspecified chronic bronchitis"}]},
+        {"code": "J44.9", "name": "Chronic obstructive pulmonary disease, unspecified", "codes": [{"code": "J44.9", "name": "Chronic obstructive pulmonary disease, unspecified"}]},
+        {"code": "J45.909", "name": "Unspecified asthma, uncomplicated", "codes": [{"code": "J45.909", "name": "Unspecified asthma, uncomplicated"}]},
+        {"code": "J96.90", "name": "Respiratory failure, unspecified, unspecified whether with hypoxia or hypercapnia", "codes": [{"code": "J96.90", "name": "Respiratory failure, unspecified, unspecified whether with hypoxia or hypercapnia"}]}
+      ]
+    },
+    {
+      "code_range": "K00-K95",
+      "name": "Digestive System Diseases",
+      "categories": [
+        {"code": "K21.0", "name": "Gastro-esophageal reflux disease with esophagitis", "codes": [{"code": "K21.0", "name": "Gastro-esophageal reflux disease with esophagitis"}]},
+        {"code": "K21.9", "name": "Gastro-esophageal reflux disease without esophagitis", "codes": [{"code": "K21.9", "name": "Gastro-esophageal reflux disease without esophagitis"}]},
+        {"code": "K25.9", "name": "Gastric ulcer, unspecified", "codes": [{"code": "K25.9", "name": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation"}]},
+        {"code": "K26.9", "name": "Duodenal ulcer, unspecified", "codes": [{"code": "K26.9", "name": "Duodenal ulcer, unspecified as acute or chronic, without hemorrhage or perforation"}]},
+        {"code": "K29.7", "name": "Gastritis, unspecified", "codes": [{"code": "K29.7", "name": "Gastritis, unspecified"}]},
+        {"code": "K30", "name": "Functional dyspepsia", "codes": [{"code": "K30", "name": "Functional dyspepsia"}]},
+        {"code": "K35.80", "name": "Unspecified acute appendicitis", "codes": [{"code": "K35.80", "name": "Unspecified acute appendicitis"}]},
+        {"code": "K40.90", "name": "Unspecified unilateral inguinal hernia, without obstruction or gangrene", "codes": [{"code": "K40.90", "name": "Unspecified unilateral inguinal hernia, without obstruction or gangrene"}]},
+        {"code": "K52.9", "name": "Noninfective gastroenteritis and colitis, unspecified", "codes": [{"code": "K52.9", "name": "Noninfective gastroenteritis and colitis, unspecified"}]},
+        {"code": "K58.9", "name": "Irritable bowel syndrome without diarrhea", "codes": [{"code": "K58.9", "name": "Irritable bowel syndrome without diarrhea"}]},
+        {"code": "K59.00", "name": "Constipation, unspecified", "codes": [{"code": "K59.00", "name": "Constipation, unspecified"}]},
+        {"code": "K63.5", "name": "Polyp of colon", "codes": [{"code": "K63.5", "name": "Polyp of colon"}]},
+        {"code": "K70.3", "name": "Alcoholic cirrhosis of liver", "codes": [{"code": "K70.3", "name": "Alcoholic cirrhosis of liver"}]},
+        {"code": "K72.90", "name": "Hepatic failure, unspecified without coma", "codes": [{"code": "K72.90", "name": "Hepatic failure, unspecified without coma"}]},
+        {"code": "K74.60", "name": "Unspecified cirrhosis of liver", "codes": [{"code": "K74.60", "name": "Unspecified cirrhosis of liver"}]},
+        {"code": "K76.0", "name": "Fatty (change of) liver, not elsewhere classified", "codes": [{"code": "K76.0", "name": "Fatty (change of) liver, not elsewhere classified"}]},
+        {"code": "K80.20", "name": "Calculus of gallbladder without cholecystitis, without obstruction", "codes": [{"code": "K80.20", "name": "Calculus of gallbladder without cholecystitis, without obstruction"}]},
+        {"code": "K81.0", "name": "Acute cholecystitis", "codes": [{"code": "K81.0", "name": "Acute cholecystitis"}]},
+        {"code": "K81.9", "name": "Cholecystitis, unspecified", "codes": [{"code": "K81.9", "name": "Cholecystitis, unspecified"}]},
+        {"code": "K85.90", "name": "Acute pancreatitis without necrosis or infection, unspecified", "codes": [{"code": "K85.90", "name": "Acute pancreatitis without necrosis or infection, unspecified"}]},
+        {"code": "K86.9", "name": "Disease of pancreas, unspecified", "codes": [{"code": "K86.9", "name": "Disease of pancreas, unspecified"}]}
+      ]
+    },
+    {
+      "code_range": "L00-L99",
+      "name": "Skin & Subcutaneous Tissue Diseases",
+      "categories": [
+        {"code": "L02.90", "name": "Cutaneous abscess, unspecified", "codes": [{"code": "L02.90", "name": "Cutaneous abscess, unspecified"}]},
+        {"code": "L03.90", "name": "Cellulitis, unspecified", "codes": [{"code": "L03.90", "name": "Cellulitis, unspecified"}]},
+        {"code": "L20.9", "name": "Atopic dermatitis, unspecified", "codes": [{"code": "L20.9", "name": "Atopic dermatitis, unspecified"}]},
+        {"code": "L30.9", "name": "Dermatitis, unspecified", "codes": [{"code": "L30.9", "name": "Dermatitis, unspecified"}]},
+        {"code": "L40.9", "name": "Psoriasis, unspecified", "codes": [{"code": "L40.9", "name": "Psoriasis, unspecified"}]},
+        {"code": "L50.9", "name": "Urticaria, unspecified", "codes": [{"code": "L50.9", "name": "Urticaria, unspecified"}]},
+        {"code": "L70.0", "name": "Acne vulgaris", "codes": [{"code": "L70.0", "name": "Acne vulgaris"}]},
+        {"code": "L84", "name": "Corns and callosities", "codes": [{"code": "L84", "name": "Corns and callosities"}]},
+        {"code": "L98.9", "name": "Disorder of the skin and subcutaneous tissue, unspecified", "codes": [{"code": "L98.9", "name": "Disorder of the skin and subcutaneous tissue, unspecified"}]}
+      ]
+    },
+    {
+      "code_range": "M00-M99",
+      "name": "Musculoskeletal System & Connective Tissue Diseases",
+      "categories": [
+        {"code": "M05.9", "name": "Rheumatoid arthritis with rheumatoid factor, unspecified", "codes": [{"code": "M05.9", "name": "Rheumatoid arthritis with rheumatoid factor, unspecified"}]},
+        {"code": "M06.9", "name": "Rheumatoid arthritis, unspecified", "codes": [{"code": "M06.9", "name": "Rheumatoid arthritis, unspecified"}]},
+        {"code": "M10.9", "name": "Gout, unspecified", "codes": [{"code": "M10.9", "name": "Gout, unspecified"}]},
+        {"code": "M15.9", "name": "Polyosteoarthritis, unspecified", "codes": [{"code": "M15.9", "name": "Polyosteoarthritis, unspecified"}]},
+        {"code": "M16.9", "name": "Osteoarthritis of hip, unspecified", "codes": [{"code": "M16.9", "name": "Osteoarthritis of hip, unspecified"}]},
+        {"code": "M17.9", "name": "Osteoarthritis of knee, unspecified", "codes": [{"code": "M17.9", "name": "Osteoarthritis of knee, unspecified"}]},
+        {"code": "M19.90", "name": "Osteoarthritis, unspecified site", "codes": [{"code": "M19.90", "name": "Osteoarthritis, unspecified site"}]},
+        {"code": "M25.50", "name": "Pain in unspecified joint", "codes": [{"code": "M25.50", "name": "Pain in unspecified joint"}]},
+        {"code": "M54.5", "name": "Low back pain", "codes": [{"code": "M54.5", "name": "Low back pain"}]},
+        {"code": "M54.2", "name": "Cervicalgia", "codes": [{"code": "M54.2", "name": "Cervicalgia"}]},
+        {"code": "M54.9", "name": "Dorsalgia, unspecified", "codes": [{"code": "M54.9", "name": "Dorsalgia, unspecified"}]},
+        {"code": "M62.83", "name": "Muscle spasm", "codes": [{"code": "M62.83", "name": "Muscle spasm"}]},
+        {"code": "M79.1", "name": "Myalgia", "codes": [{"code": "M79.1", "name": "Myalgia"}]},
+        {"code": "M79.3", "name": "Panniculitis, unspecified", "codes": [{"code": "M79.3", "name": "Panniculitis, unspecified"}]},
+        {"code": "M79.7", "name": "Fibromyalgia", "codes": [{"code": "M79.7", "name": "Fibromyalgia"}]},
+        {"code": "M80.00XA", "name": "Age-related osteoporosis with current pathological fracture, unspecified site, initial encounter for fracture", "codes": [{"code": "M80.00XA", "name": "Age-related osteoporosis with current pathological fracture, unspecified site, initial encounter for fracture"}]},
+        {"code": "M81.0", "name": "Age-related osteoporosis without current pathological fracture", "codes": [{"code": "M81.0", "name": "Age-related osteoporosis without current pathological fracture"}]}
+      ]
+    },
+    {
+      "code_range": "N00-N99",
+      "name": "Genitourinary System Diseases",
+      "categories": [
+        {"code": "N17.9", "name": "Acute kidney failure, unspecified", "codes": [{"code": "N17.9", "name": "Acute kidney failure, unspecified"}]},
+        {"code": "N18.9", "name": "Chronic kidney disease, unspecified", "codes": [{"code": "N18.9", "name": "Chronic kidney disease, unspecified"}]},
+        {"code": "N20.0", "name": "Calculus of kidney", "codes": [{"code": "N20.0", "name": "Calculus of kidney"}]},
+        {"code": "N20.9", "name": "Urinary calculus, unspecified", "codes": [{"code": "N20.9", "name": "Urinary calculus, unspecified"}]},
+        {"code": "N30.00", "name": "Acute cystitis without hematuria", "codes": [{"code": "N30.00", "name": "Acute cystitis without hematuria"}]},
+        {"code": "N30.90", "name": "Cystitis, unspecified without hematuria", "codes": [{"code": "N30.90", "name": "Cystitis, unspecified without hematuria"}]},
+        {"code": "N39.0", "name": "Urinary tract infection, site not specified", "codes": [{"code": "N39.0", "name": "Urinary tract infection, site not specified"}]},
+        {"code": "N40.0", "name": "Benign prostatic hyperplasia without lower urinary tract symptoms", "codes": [{"code": "N40.0", "name": "Benign prostatic hyperplasia without lower urinary tract symptoms"}]},
+        {"code": "N40.1", "name": "Benign prostatic hyperplasia with lower urinary tract symptoms", "codes": [{"code": "N40.1", "name": "Benign prostatic hyperplasia with lower urinary tract symptoms"}]},
+        {"code": "N41.9", "name": "Inflammatory disease of prostate, unspecified", "codes": [{"code": "N41.9", "name": "Inflammatory disease of prostate, unspecified"}]},
+        {"code": "N63", "name": "Unspecified lump in breast", "codes": [{"code": "N63", "name": "Unspecified lump in breast"}]},
+        {"code": "N76.0", "name": "Acute vaginitis", "codes": [{"code": "N76.0", "name": "Acute vaginitis"}]}
+      ]
+    },
+    {
+      "code_range": "O00-O9A",
+      "name": "Pregnancy & Childbirth",
+      "categories": [
+        {"code": "O03.9", "name": "Spontaneous abortion, complete or unspecified, without complication", "codes": [{"code": "O03.9", "name": "Spontaneous abortion, complete or unspecified, without complication"}]},
+        {"code": "O09.90", "name": "High risk pregnancy, unspecified, unspecified trimester", "codes": [{"code": "O09.90", "name": "High risk pregnancy, unspecified, unspecified trimester"}]},
+        {"code": "O26.843", "name": "Uterine size-date discrepancy, third trimester", "codes": [{"code": "O26.843", "name": "Uterine size-date discrepancy, third trimester"}]}
+      ]
+    },
+    {
+      "code_range": "R00-R99",
+      "name": "Symptoms, Signs & Abnormal Findings",
+      "categories": [
+        {"code": "R00.0", "name": "Tachycardia, unspecified", "codes": [{"code": "R00.0", "name": "Tachycardia, unspecified"}]},
+        {"code": "R00.2", "name": "Palpitations", "codes": [{"code": "R00.2", "name": "Palpitations"}]},
+        {"code": "R05", "name": "Cough", "codes": [{"code": "R05", "name": "Cough"}]},
+        {"code": "R06.00", "name": "Dyspnea, unspecified", "codes": [{"code": "R06.00", "name": "Dyspnea, unspecified"}]},
+        {"code": "R06.02", "name": "Shortness of breath", "codes": [{"code": "R06.02", "name": "Shortness of breath"}]},
+        {"code": "R07.9", "name": "Chest pain, unspecified", "codes": [{"code": "R07.9", "name": "Chest pain, unspecified"}]},
+        {"code": "R10.9", "name": "Unspecified abdominal pain", "codes": [{"code": "R10.9", "name": "Unspecified abdominal pain"}]},
+        {"code": "R11.2", "name": "Nausea with vomiting, unspecified", "codes": [{"code": "R11.2", "name": "Nausea with vomiting, unspecified"}]},
+        {"code": "R19.7", "name": "Diarrhea, unspecified", "codes": [{"code": "R19.7", "name": "Diarrhea, unspecified"}]},
+        {"code": "R21", "name": "Rash and other nonspecific skin eruption", "codes": [{"code": "R21", "name": "Rash and other nonspecific skin eruption"}]},
+        {"code": "R42", "name": "Dizziness and giddiness", "codes": [{"code": "R42", "name": "Dizziness and giddiness"}]},
+        {"code": "R50.9", "name": "Fever, unspecified", "codes": [{"code": "R50.9", "name": "Fever, unspecified"}]},
+        {"code": "R51", "name": "Headache", "codes": [{"code": "R51", "name": "Headache"}]},
+        {"code": "R53.83", "name": "Other fatigue", "codes": [{"code": "R53.83", "name": "Other fatigue"}]},
+        {"code": "R55", "name": "Syncope and collapse", "codes": [{"code": "R55", "name": "Syncope and collapse"}]},
+        {"code": "R56.9", "name": "Unspecified convulsions", "codes": [{"code": "R56.9", "name": "Unspecified convulsions"}]},
+        {"code": "R60.0", "name": "Localized edema", "codes": [{"code": "R60.0", "name": "Localized edema"}]},
+        {"code": "R63.4", "name": "Abnormal weight loss", "codes": [{"code": "R63.4", "name": "Abnormal weight loss"}]}
+      ]
+    },
+    {
+      "code_range": "S00-T88",
+      "name": "Injury, Poisoning & External Causes",
+      "categories": [
+        {"code": "S00.93XA", "name": "Unspecified superficial injury of unspecified part of head, initial encounter", "codes": [{"code": "S00.93XA", "name": "Unspecified superficial injury of unspecified part of head, initial encounter"}]},
+        {"code": "S09.90XA", "name": "Unspecified injury of head, initial encounter", "codes": [{"code": "S09.90XA", "name": "Unspecified injury of head, initial encounter"}]},
+        {"code": "S42.001A", "name": "Fracture of unspecified part of right clavicle, initial encounter for closed fracture", "codes": [{"code": "S42.001A", "name": "Fracture of unspecified part of right clavicle, initial encounter for closed fracture"}]},
+        {"code": "S52.501A", "name": "Unspecified fracture of the lower end of right radius, initial encounter for closed fracture", "codes": [{"code": "S52.501A", "name": "Unspecified fracture of the lower end of right radius, initial encounter for closed fracture"}]},
+        {"code": "S62.90XA", "name": "Unspecified fracture of unspecified wrist and hand, initial encounter for closed fracture", "codes": [{"code": "S62.90XA", "name": "Unspecified fracture of unspecified wrist and hand, initial encounter for closed fracture"}]},
+        {"code": "S72.001A", "name": "Fracture of unspecified part of neck of right femur, initial encounter for closed fracture", "codes": [{"code": "S72.001A", "name": "Fracture of unspecified part of neck of right femur, initial encounter for closed fracture"}]},
+        {"code": "S82.001A", "name": "Unspecified fracture of right patella, initial encounter for closed fracture", "codes": [{"code": "S82.001A", "name": "Unspecified fracture of right patella, initial encounter for closed fracture"}]},
+        {"code": "S93.401A", "name": "Sprain of unspecified ligament of right ankle, initial encounter", "codes": [{"code": "S93.401A", "name": "Sprain of unspecified ligament of right ankle, initial encounter"}]},
+        {"code": "T14.90XA", "name": "Injury, unspecified, initial encounter", "codes": [{"code": "T14.90XA", "name": "Injury, unspecified, initial encounter"}]},
+        {"code": "T50.901A", "name": "Poisoning by unspecified drug or medicament, initial encounter", "codes": [{"code": "T50.901A", "name": "Poisoning by unspecified drug or medicament, initial encounter"}]},
+        {"code": "T78.40XA", "name": "Allergy, unspecified, initial encounter", "codes": [{"code": "T78.40XA", "name": "Allergy, unspecified, initial encounter"}]}
+      ]
+    },
+    {
+      "code_range": "Z00-Z99",
+      "name": "Health Status & Contact with Health Services",
+      "categories": [
+        {"code": "Z00.00", "name": "Encounter for general adult medical examination without abnormal findings", "codes": [{"code": "Z00.00", "name": "Encounter for general adult medical examination without abnormal findings"}]},
+        {"code": "Z00.129", "name": "Encounter for routine child health examination without abnormal findings", "codes": [{"code": "Z00.129", "name": "Encounter for routine child health examination without abnormal findings"}]},
+        {"code": "Z23", "name": "Encounter for immunization", "codes": [{"code": "Z23", "name": "Encounter for immunization"}]},
+        {"code": "Z71.3", "name": "Dietary counseling and surveillance", "codes": [{"code": "Z71.3", "name": "Dietary counseling and surveillance"}]},
+        {"code": "Z79.0", "name": "Long term (current) use of anticoagulants and antithrombotics", "codes": [{"code": "Z79.0", "name": "Long term (current) use of anticoagulants and antithrombotics"}]},
+        {"code": "Z79.4", "name": "Long term (current) use of insulin", "codes": [{"code": "Z79.4", "name": "Long term (current) use of insulin"}]},
+        {"code": "Z87.891", "name": "Personal history of nicotine dependence", "codes": [{"code": "Z87.891", "name": "Personal history of nicotine dependence"}]},
+        {"code": "Z96.1", "name": "Presence of intraocular lens", "codes": [{"code": "Z96.1", "name": "Presence of intraocular lens"}]},
+        {"code": "Z96.641", "name": "Presence of right hip prosthesis", "codes": [{"code": "Z96.641", "name": "Presence of right hip prosthesis"}]},
+        {"code": "Z96.651", "name": "Presence of right knee prosthesis", "codes": [{"code": "Z96.651", "name": "Presence of right knee prosthesis"}]},
+        {"code": "Z96.9", "name": "Presence of functional implant, unspecified", "codes": [{"code": "Z96.9", "name": "Presence of functional implant, unspecified"}]}
+      ]
+    }
+  ]
+}

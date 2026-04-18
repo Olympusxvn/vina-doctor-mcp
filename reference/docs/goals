@@ -1,0 +1,41 @@
+Answer to a question from one participant to the Challenge 1 - The Medical Scribe:
+*Evaluation framework*
+You should test your solution against the following dimensions:
+*1. Clinical correctness* 
+Can your system accurately capture the medical content of the consultation without dangerous omissions or misinterpretations? 
+Test yourself on: 
+* symptoms 
+* findings 
+* diagnosis (when present) 
+* treatment / recommendations
+*2. Multilingual robustness* 
+Can your system still perform well if the consultation is in a language you do not personally understand? 
+You should test: 
+* different languages 
+* different accents 
+* mixed medical and non-medical speech 
+* imperfect audio quality
+*3. Completeness* 
+Does your output cover all major parts of the consultation, not just the final diagnosis? 
+A strong output should include: 
+* reason for visit 
+* relevant history/context 
+* observations/findings 
+* diagnosis or working hypothesis 
+* treatment / next steps
+*4. Actionability* 
+Does the patient summary clearly explain what the patient should do next? 
+Avoid vague outputs. The summary should be practical and understandable.
+*5. UX clarity* 
+Is the final output easy to read and immediately usable? 
+We recommend a clear structure such as: 
+* transcript 
+* structured clinical report 
+* patient summary 
+* severity / urgency level
+You should assume the live evaluation input will be: 
+* a real consultation audio recording 
+* unseen in advance 
+* potentially multilingual 
+* potentially noisy or unstructured
+So the goal is not to optimize for one perfect example, but to build a system that generalizes reliably in real-world conditions.

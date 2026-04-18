@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "session_id": "EL-9921-SCRIBE",
+    "model": "qwen2.5-audio-turbo",
+    "diarization_mode": "contextual_end_to_end",
+    "languages_detected": ["vi-VN", "en-US"]
+  },
+  "transcript": [
+    {
+      "speaker": "Doctor",
+      "timestamp": "00:01-00:05",
+      "text": "Chào bác, kết quả xét nghiệm máu cho thấy đường huyết hơi cao. Bác thấy trong người thế nào?"
+    },
+    {
+      "speaker": "Patient",
+      "timestamp": "00:06-00:15",
+      "text": "Dạ, tôi thấy hơi chóng mặt và khát nước liên tục, doctor. I've been feeling very thirsty lately."
+    },
+    {
+      "speaker": "Doctor",
+      "timestamp": "00:16-00:25",
+      "text": "Đó là triệu chứng điển hình của đường huyết tăng. Tôi sẽ kê Metformin 500mg, uống sau ăn nhé."
+    }
+  ],
+  "clinical_report": {
+    "soap_analysis": {
+      "subjective": "Patient reports dizziness and polydipsia (excessive thirst).",
+      "objective": "Blood test results indicate elevated glucose levels.",
+      "assessment": "Type 2 Diabetes Mellitus - Early Stage. ICD-10: E11.9",
+      "plan": "Start Metformin 500mg daily. Monitor fasting glucose. Follow-up in 2 weeks."
+    },
+    "medications": [
+      {
+        "name": "Metformin",
+        "dosage": "500mg",
+        "frequency": "Once daily after meal",
+        "route": "Oral"
+      }
+    ],
+    "severity_level": "Medium",
+    "action_items": [
+      "Check blood sugar every morning",
+      "Reduce carbohydrate intake"
+    ]
+  },
+  "multilingual_summary": {
+    "en": "Early-stage Type 2 Diabetes. Prescribed Metformin 500mg.",
+    "vn": "Tiểu đường tuýp 2 giai đoạn đầu. Kê đơn Metformin 500mg.",
+    "fr": "Diabète de type 2 au stade initial. Metformin 500 mg prescrit.",
+    "ar": "مرض السكري من النوع 2 في مرحلة مبكرة. تم وصف الميتفورمين 500 ملغ."
+  }
+}

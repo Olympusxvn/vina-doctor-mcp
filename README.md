@@ -73,7 +73,7 @@ Follows [SHARP spec](https://sharponmcp.com/) for FHIR context propagation via H
 
 **Agents Assemble — The Healthcare AI Endgame** (Prompt Opinion)
 - Deadline: 11 May 2026
-- Repo: [sotaworksvn/vina-doctor-mcp
+- Repo: github.com/olympusxvn/vina-doctor-mcp
 
 ## License
 

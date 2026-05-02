@@ -69,7 +69,7 @@ uv run pytest tests/ -v
 
 Follows [SHARP spec](https://sharponmcp.com/) for FHIR context propagation via HTTP headers. Tools that support FHIR context will use patient data when available, and gracefully degrade when headers are absent.
 
-## Hackathon
+## The Healthcare AI Endgame
 
 **Agents Assemble — The Healthcare AI Endgame** (Prompt Opinion)
 - Deadline: 11 May 2026

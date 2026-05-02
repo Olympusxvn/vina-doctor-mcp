@@ -39,6 +39,7 @@ Thin HTTP proxy — no business logic. Translates MCP tool calls into AI Engine 
 | `process_audio_url` | Audio URL → full pipeline → SOAP report | Optional |
 | `get_consultation_status` | Poll async job status | No |
 
+Core objective: A Vietnamese doctor can open Prompt Opinion, call the vina-doctor tool, receive a Vietnamese SOAP response within 60 seconds — and see that this is a product built by Vietnamese people, for Vietnamese people.
 ## Quick start
 
 ```bash
